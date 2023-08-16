@@ -1,0 +1,30 @@
+{
+	"name": "zixsihub/zip-content",
+	"type": "library",
+	"description": "Checking and validation the contents of a zip before extracting",
+	"keywords": ["zip", "utils", "validation"],
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Dmitriy Limansky",
+			"email": "zixxsi@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Zixsihub\\ZipContent\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Examples\\": "examples"
+		}
+	},
+	"require": {
+		"php": "^7.2",
+		"ext-zip": "*"
+	},
+	"require-dev": {
+
+	}
+}
