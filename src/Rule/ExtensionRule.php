@@ -5,7 +5,7 @@ namespace Zixsihub\ZipContent\Rule;
 use Zixsihub\ZipContent\Content;
 use Zixsihub\ZipContent\Exception\ValidationException;
 
-class ExtensionRule implements RuleInterface
+final class ExtensionRule implements RuleInterface
 {
 	
 	/** @var string[] */
@@ -23,8 +23,6 @@ class ExtensionRule implements RuleInterface
 	 */
 	public function check(Content $content): void
 	{
-		
-		
 		if (in_array($content->getExtension(), $this->extensions) === false) {
 			throw new ValidationException(
 				sprintf(
